@@ -133,7 +133,12 @@ body{
     }
         .container-con{
         position: relative !important;
-        top: 00px !important;
+        top: 500px !important;
+    }
+
+    footer{
+        position: relative;
+        top: 500px;
     }
 
 }
@@ -243,7 +248,10 @@ nav{
 }
 
 
-
+.head{
+    font-size: 3em;
+    font-weight: bolder;
+}
 
 
 
@@ -266,7 +274,8 @@ nav{
 background: linear-gradient(180deg, rgba(242,242,242,1) 10%, rgba(255,255,255,1) 86%);*/
 }
 #sec4{
-
+    position: relative;
+    top: 0px;
     width: 100%;
     height: 100vh;
     background-color:var(--c6);
@@ -427,7 +436,7 @@ background: linear-gradient(180deg, rgba(242,242,242,1) 10%, rgba(255,255,255,1)
     transition: .5s ease;
 }
 
-.box:hover .iconabt{
+.box:hover .abticon{
     scale: .8;
     transition: .5s ease;
 }
@@ -520,8 +529,8 @@ background: linear-gradient(180deg, rgba(242,242,242,1) 10%, rgba(255,255,255,1)
 }
 
 .cus-but2:hover {
-    border-color: var(--c4);
-    color: var(--c2);
+    border-color: var(--c1);
+    color: var(--c1);
 }
 
 .cus-but2::before {
@@ -531,7 +540,7 @@ background: linear-gradient(180deg, rgba(242,242,242,1) 10%, rgba(255,255,255,1)
     top: 0;
     width: 100%;
     height: 100%;
-    background: var(--c1);
+    background: var(--c3);
     z-index: -1;
     transition: transform .5s;
     transform-origin: 0 0;
@@ -966,13 +975,17 @@ textarea.input {
 
 .con-txt{
     position: relative;
-    top: 20px;
+    top: 10px;
 }
 
 
 
 
-
+.serv{
+    position: relative;
+    top: 150px;
+    font-size: 3.4em;
+}
 
 
 
