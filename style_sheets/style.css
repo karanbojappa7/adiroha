@@ -1,11 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
 body{
-    padding: 0;
-    margin: 0;
+
 }
-/*
+
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -15,9 +19,9 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--c5);
+    background: var(--c6);
 }
-*/
+
 
 .nodrag{
     user-drag: none;
@@ -56,7 +60,7 @@ body{
 .bgc1{background-color:#ffffff;}
 .bgc2{background-color:#000000;}
 .bgc3{background-color:#1b1825;}
-.bgc4{background-color:#42d9be;;}
+.bgc4{background-color:#42d9be;}
 .bgc5{background-color:#1989fb;}
 .bgc6{background-color:#f3f3f3;}
 .bgc7{background-color:;}
@@ -65,7 +69,7 @@ body{
 .bgc10{background-color:;}
 
 
-#preloader {
+/*#preloader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,15 +82,15 @@ body{
     animation: bg ease-in 2.5s forwards 2s;
     z-index: 50;
 }
-
+*/
 
 
 .fon1{
-    font-family: 'Audiowide', cursive;
+
 }
 
 .fon2{
-    font-family: 'Kanit', sans-serif;
+
 }
 
 .fon3{
@@ -99,6 +103,39 @@ body{
 
 
 @media only screen and (max-width: 480px) {
+    .slide-content h1 {
+    font-size: 2em !important;
+}
+
+.owl-prev, .owl-next{
+    display: none !important;
+}
+
+#sec1{
+    top:1px !important;
+}
+
+.serv{
+    font-size: 1.2em !important;
+    text-align: center !important;
+}
+
+.inimg{
+    width: 150px !important;
+}
+
+.setxt{
+position: relative;
+transform: translate(0,-200%) !important;
+font-weight: bold;
+font-size: 1em !important;
+}
+
+    .itemse{
+    width: 100%;
+    height: 85vh !important;
+
+}
 
 
 }
@@ -126,10 +163,10 @@ padding: 5%;
 }
     .itemse{
     z-index: 10;
-    width: 100%;
-    height: 25vh !important;
-
+    width: 100% !important;
+    height: 80% !important;
 }
+
 }
 /*Large devices*/
 @media only screen and (min-width: 1281px){
@@ -140,28 +177,39 @@ padding: 5%;
 
 }
 
+.owl-dots {
+    width: 7% !important;
+}
+
+
+    .inimg{
+    width: 250px !important;
+padding: 5%;
+}
+
 }
 
 a{
     text-decoration: none;
 }
 
-.navbar{
-    background-color: var(--c1);
+.navbar ,.navbarsm{
+    background-color: transparent;
+    box-shadow: 0 0px 15px 10px rgba(0,0,0,0.19);
+    z-index: 10;
 }
 
 
 
 
 .nav-link{
-    color: var(--c1);
-    font-size: 1.0em;
+    color: var(--c1) !important;
 }
 
 
 .nav-item a {
     padding: 8px 8px 8px 64px;
-    font-size: 17px;
+    font-size: 14px;
     color: var(--c2);
     display: block;
     cursor: pointer !important;
@@ -180,6 +228,65 @@ a{
     width: 65%;
 }
 
+.bad{
+    border: 1px solid var(--c4);
+    color: var(--c4) !important;
+    transition: .5s ease;
+    font-size: 14px;
+}
+
+.bad:hover{
+    background-color: var(--c4);
+    border: 1px solid var(--c4);
+    color: var(--c1) !important;
+    transition: .5s ease;
+}
+
+.droper{
+    color: var(--c1) !important;
+}
+.dropbtn {
+/*    background-color: var(--c1);*/
+/*    color: var(--c2);*/
+    /*padding: 16px;
+    font-size: 16px;*/
+    border: none;
+    background-color: transparent ;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:var(--c1);
+    min-width: 160px;
+/*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+    transition: .5s;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: .5s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    transition: .5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
 .navbarsm {
@@ -264,14 +371,132 @@ a{
 
 
 #sec1{
+       position: relative;
+    top: -110px;
+}
+
+#owl1{
+     width: 100%;
+    height: 100vh;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
 
 }
+
+.slide-1 {
+    background-image: url(pictures/bg1.jpg);
+}
+
+.slide-2 {
+    background-image: url(pictures/bg2.jpg);
+}
+
+.slide-3 {
+    background-image: url(pictures/bg3.jpg);
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+/*    padding: 0 20%;*/
+}
+
+.slide-content h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.slide-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.slide-content button {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: none;
+}
+
+.owl-dots {
+    width: 50%;
+    position: absolute;
+    transform:translate(50%); !important;
+    bottom: 1%;
+
+}
+
+.owl-dots span {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.owl-dots button {
+    border: none !important;
+    outline: none !important;
+}
+
+.owl-nav button {
+    border: none !important;
+    outline: none !important;
+    border: 1px solid var(--c1) !important;
+        width: 52px;
+    height: 52px;
+}
+
+
+
+.owl-prev, .owl-next {
+    position: absolute;
+    color: #fff !important;
+    font-size: 30px !important;
+    font-weight: bolder !important;
+    background:none !important;
+    border-radius: 100% !important;
+    opacity: 0.2;
+    transition: 0.5s ease;
+}
+
+.owl-prev {
+    top: 60%;
+    right: 20%;
+}
+
+.owl-next {
+    top: 68%;
+    right: 20%;
+}
+
+.owl-prev:hover ,.owl-next:hover{
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+
 
 
 #sec2{
     width: 100%;
-/*    height: 40vh;*/
-/*    background-color: var(--c3);*/
 background: rgb(27,24,37);
 background: linear-gradient(180deg, rgba(27,24,37,1) 80%, rgba(242,242,242,1) 43%);
 }
@@ -593,19 +818,7 @@ padding-bottom: 5%;
 
 
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body,
-input,
-textarea {
-  font-family: "Poppins", sans-serif;
-}
 
 .container-con {
   position: relative;
@@ -1005,10 +1218,7 @@ textarea.input {
 
 
 .inimg{
-/*    position: absolute;*/
-/*    top:-50px;*/
-/*transform: translate(30%,-5%);*/
-    width: 250px !important;
+    width: 250px;
 padding: 5%;
 }
 
