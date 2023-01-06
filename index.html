@@ -28,6 +28,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
 
 
+  <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
 
     <link rel="stylesheet" href="style_sheets/style.css">
 
@@ -45,6 +51,7 @@
 -->
 
 
+                    <hr>
     <nav class="navbar navbar-expand-sm fixed-top p-4 d-none d-xl-block">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="style_sheets/pictures/logo.png" class="logo" width="40%"></a>
@@ -58,7 +65,7 @@
                         <div class="mt-2 c1">|</div>
                     </li>
                     <li class="nav-item d-flex">
-                        <a class="nav-link" href="javascript:void(0)">About</a>
+                        <a class="nav-link" href="javascript:void(0)">Profile</a>
                         <div class="mt-2 c1">|</div>
                     </li>
 
@@ -100,7 +107,7 @@
                         </a>
                     </li>
                     <li class="nav-ite">
-                        <a class="nav-link bad" href="book-demo.html">
+                        <a href="book-demo.html" type="button" class="nav-link bad" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Book a demo
                         </a>
                     </li>
@@ -114,7 +121,7 @@
         <div id="mainbox" onclick="openFunction()">&#9776;</div>
         <div id="menu" class="sidemenu">
             <a href="index.html" id="link1" class="fon1">Home</a>
-            <a href="#" id="link" class="fon1">About</a>
+            <a href="#" id="link" class="fon1">Profile</a>
 
 
 
@@ -155,6 +162,84 @@
             <div class="closebtn" onclick="closeFunction()">&times;</div>
         </div>
     </nav>
+
+
+<div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="c5">Request a Demo </div>   
+                     <form method="post" class="row form-group">
+
+                <div class="col-sm-6 p-3">
+                    <label>Name:</label><br>
+                    <input type="text" name="" class="col-sm-12 form-control p-2">
+                </div>  
+
+                <div class="col-sm-6 p-3">
+                    <label>Email:</label><br>
+                    <input type="email" name="" class="col-sm-12 form-control p-2">
+                </div>               
+                 <div class="col-sm-6 p-3">
+                    <label>Phone Number:</label><br>
+                    <input id="phone" type="tel" name="phone" class="col-sm-12 form-control " width="50px">
+
+                </div>  
+
+                <div class="col-sm-6 p-3">
+                    <label>subject:</label><br>
+                    <input type="text-center" name="" class="col-sm-8 form-control p-2">
+                </div>
+                <div class="col-sm-12 p-3">
+                    <label>Message:</label><br>
+                    <textarea cols="4" rows="4" class="form-control"></textarea>
+                </div>
+                <!-- <input type="submit" class="btn btn-primary col-sm-5 p-1 mt-2 mx-3" value="submit"> -->
+
+                <div class="col-sm-6 mx-1">
+                    <button class="cus-but col-sm-8">Submit</button>
+                   </div> 
+
+            </form>
+                    
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="h2">
+                        During the demo you will</div>
+                        <ul>
+<li>Learn why your current Security Awareness solution locks impact.</li>
+<li>Dive into the platform and start phishing your employees within minutes.</li>
+<li>Experience firsthand how the Phished Al works.</li>
+<li>Take a look at the integrated Phished Academy.</li>
+<li>Visualize the weak spots in your company</li>
+</ul>
+                </div>
+
+            </div>
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
     <section id="sec1">
         <div id="owl1" class="owl-carousel owl-theme">
@@ -595,9 +680,10 @@ Bengaluru, Karnataka 560066 </p>
                             <span>Email</span>
                         </div>
                         <div class="input-container">
-                            <input type="tel" name="phone" class="input" />
-                            <label for="">Phone</label>
-                            <span>Phone</span>
+                            <!-- <input type="tel" name="phone" class="input" /> -->
+                            <input id="phone" type="tel" name="phone" class="input" placeholder="Enter Phone Number">
+                            <label for=""></label>
+                            <span></span>
                         </div>
                         <div class="input-container textarea">
                             <textarea name="message" class="input"></textarea>
@@ -795,6 +881,15 @@ Bengaluru, Karnataka 560066 </p>
         });
 
     </script>
+
+ <script>
+   const phoneInputField = document.querySelector("#phone");
+   const phoneInput = window.intlTelInput(phoneInputField, {
+     utilsScript:
+       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+ </script>
+
     <script src="scripts/owl.carousel.min.js"></script>
 
 

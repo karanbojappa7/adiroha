@@ -981,6 +981,11 @@ padding-bottom: 5%;
   position: relative;
 }
 
+#phone{
+    position: relative;
+    width: 135%;
+}
+
 .circle {
   border-radius: 50%;
   background: linear-gradient(135deg, transparent 20%, var(--c4));

@@ -102,7 +102,10 @@ body{
     
 }
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+
+
+}
 @media only screen and (max-width: 768px) {}
 /*medium devices*/
 @media only screen and (max-width: 1024px){
@@ -118,6 +121,19 @@ body{
         width: 300 !important;
         margin: 10px 40px 15px !important;
     }
+
+.socialdown{
+    position: relative;
+    top: 100px;
+}
+
+.conform{
+    padding: 3% !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+
 }
 
 
@@ -143,7 +159,7 @@ a{
 
 .nav-item a {
     padding: 8px 8px 8px 64px;
-    font-size: 17px;
+    font-size: 20px;
     color: var(--c2);
     display: block;
     cursor: pointer !important;
@@ -153,7 +169,7 @@ a{
     content: '';
     width: 0px;
     height: 1px;
-    display: block;
+    display: block; 
     background: var(--c4);
     transition: 300ms;
 }
@@ -198,7 +214,7 @@ a{
     display: none;
     position: absolute;
     background-color:var(--c1);
-    min-width: 160px;
+    min-width: 300px;
 /*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
     z-index: 1;
     transition: .5s;
@@ -758,23 +774,78 @@ end of about us page
 }
 
 
+/*
+###########################
+
+end of training page
+
+###########################
+
+*/
+
+#contact-sec1{
+    width: 100%;
+/*    height: 100vh;*/
+    background-color: var(--c1);
+}
+
+/*.conform{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--c6);
+}*/
+
+.conform{
+    background-color: var(--c6);
+    border-radius: 20px;
+}
+
+
+.social a{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+/*  background-color: rgba(0,0,0,0.5);*/
+background-color: var(--c6);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--c2);
+  transition: all 0.5s ease;
+}
+.social a:hover{
+  color: var(--c1);
+  background-color: var(--c3);
+}
+
+.social a i{
+  padding-top: 15px;
+  font-size: 1.1em;
+}
 
 
 
+.icons{
+    position: relative;
+    font-size: 1.5em;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: var(--c5);
+    color: var(--c1);
+    padding-top: 20px;
+    padding-left: 20px;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+.icohover:hover{
+    cursor: pointer;
+    background-color: var(-c1);
+    border-bottom: 2px solid var(--c5);
+    transition: .1s;
+}
 
 
 
@@ -893,8 +964,51 @@ end of about us page
 
 
 
+.cus-but {
+    border: 2px solid var(--c5);
+    padding: 10px 20px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color .5s linear;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 10px 25px -20px rgba(255, 255, 255, 0.2);
+}
+
+.cus-but:hover {
+    border-color: var(--c1);
+    color: var(--c1);
+}
+
+.cus-but::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--c5);
+    z-index: -1;
+    transition: transform .5s;
+    transform-origin: 0 0;
+    ;
+}
+
+.cus-but::before {
+    transform: scaleX(0);
+    transition: transform .5s;
+    transition-duration: .6s;
+    transform-origin: 0 0;
+}
+
+.cus-but:hover::before {
+    transform: scaleX(1);
+}
 
 
+iframe{
+    box-shadow: 0 10px 25px -20px rgba(255, 255, 255, 0.2);
+}
 
 
 
