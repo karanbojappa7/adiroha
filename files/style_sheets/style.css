@@ -850,6 +850,53 @@ background-color: var(--c6);
 
 
 
+/*
+###########################
+
+end of contact page
+
+###########################
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+#carrersec1{
+    width: 100%;
+/*    height: 100vh;*/
+padding-bottom: 5%;
+    background-color: var(-c1);
+}
+
+.carsec1pos{
+    position: relative;
+    top: 200px;
+    color: var(--c1);
+}
+
+.carsec1pos h1{
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
