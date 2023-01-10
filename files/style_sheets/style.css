@@ -104,6 +104,10 @@ body{
 
 @media only screen and (max-width: 480px) {
 
+.carsec1pos{
+    top: 20px!important;
+}
+
 
 }
 @media only screen and (max-width: 768px) {}
@@ -156,7 +160,11 @@ a{
     color: var(--c1) !important;
 }
 
-
+/*.navbar-nav{
+    position: relative;
+    left: -500px;
+}
+*/
 .nav-item a {
     padding: 8px 8px 8px 64px;
     font-size: 20px;
@@ -888,6 +896,158 @@ padding-bottom: 5%;
 }
 
 
+#carrersec2{
+    width: 100%;
+    background-image: url(pictures/team.jpg);
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+
+#carrersec2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+/*    background-color: rgba(25, 137, 251, 0.7);*/
+        background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+
+
+
+.card{
+  cursor: pointer;
+  width: 100%;
+  height: 300px;
+  background-color: transparent;
+  color: var(--c1);
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+    border: 2px solid var(--c5);
+
+}
+.back{
+  background: var(--c5);
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: var(--c1);
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+
+#carrersec3{
+    width: 100%;
+/*    background-color: var(--c1);*/
+        background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 68%, rgba(2,2,2,1) 68%);
+}
+
+
+.minibox{
+    width: 100%;
+    border-radius: 20px;
+    background-image: url(pictures/team.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 10%;
+}
+/*.minibox::before{
+    content: '';
+    position: absolute;
+    top: ;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    border-radius: 20px;
+    background-color: rgba(66, 217, 190, 0.5);
+
+}*/
+
+
+.front i {
+    font-size: 5em;
+    color: var(-c4);
+}
+
+
+
+
+/*
+###########################
+
+end of career page
+
+###########################
+
+*/
+
+
+#blogsec1{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--c1);
+
+}
+
+.blogsec{
+    width: 100%;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     border-radius: 10px;
+    
+}
+
+.blogpic{
+    width: 100%;
+    height: 80%;
+}
+
 
 
 
@@ -1012,7 +1172,7 @@ padding-bottom: 5%;
 
 
 .cus-but {
-    border: 2px solid var(--c5);
+    border: 2px solid var(--c1);
     padding: 10px 20px;
     min-width: 200px;
     cursor: pointer;
@@ -1049,6 +1209,47 @@ padding-bottom: 5%;
 }
 
 .cus-but:hover::before {
+    transform: scaleX(1);
+}
+
+.cus-but2 {
+    border: 2px solid var(--c1);
+    padding: 10px 20px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color .5s linear;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 10px 25px -20px rgba(255, 255, 255, 0.2);
+}
+
+.cus-but2:hover {
+    border-color: var(--c1);
+    color: var(--c1);
+}
+
+.cus-but2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--c2);
+    z-index: -1;
+    transition: transform .5s;
+    transform-origin: 0 0;
+    ;
+}
+
+.cus-but2::before {
+    transform: scaleX(0);
+    transition: transform .5s;
+    transition-duration: .6s;
+    transform-origin: 0 0;
+}
+
+.cus-but2:hover::before {
     transform: scaleX(1);
 }
 

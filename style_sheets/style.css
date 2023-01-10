@@ -981,10 +981,11 @@ padding-bottom: 5%;
   position: relative;
 }
 
-#phone{
-    position: relative;
-    width: 135%;
+#phone::placeholder { 
+  color: var(--c1);
+  font-weight: 400;
 }
+
 
 .circle {
   border-radius: 50%;
@@ -1368,7 +1369,8 @@ font-size: 1.5em;
 
 #addsec1{
     width: 100%;
-    height: 90vh;
+    height: 110vh;
+    padding-bottom: 5%;
     background-color: var(--c1);
   /*  background: rgb(242,242,242);
 background: linear-gradient(180deg, rgba(242,242,242,1) 10%, rgba(255,255,255,1) 86%);*/

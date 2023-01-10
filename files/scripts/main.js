@@ -29,3 +29,27 @@ $(document).keyup(function(e){
 function close_video() {
   $('.video-overlay.open').removeClass('open').find('iframe').remove();
 };
+
+
+const card = document.querySelector(".card__inner");
+
+card.addEventListener("click", function (e) {
+  card.classList.toggle('is-flipped');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
