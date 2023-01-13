@@ -7,7 +7,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: var(--c3);
+/*    background-color: var(--c3);*/
 }
 
 ::-webkit-scrollbar {
@@ -111,10 +111,7 @@ body{
     display: none !important;
 }
 
-#sec1{
-    top:px !important;
-    background-color: var(--c3) !important;
-}
+
 
 .serv{
     font-size: 1.2em !important;
@@ -447,11 +444,6 @@ a{
 
 
 
-#sec1{
-       position: relative;
-    top: -110px;
-}
-
 #owl1{
      width: 100%;
     height: 100vh;
@@ -769,7 +761,7 @@ padding-bottom: 5%;
     transition: .5s ease;
 }
 
-.owl-carousel {
+.servtop{
     padding-top: 7%;
 /*    padding-left: 2%;*/
 /*    padding-right: 2%;*/
