@@ -147,9 +147,29 @@ body{
     color: var(--c1);
 }
 
+.scrollcus{
+/*    height:115% !important;*/
+}
+
+
 }
 /*Large devices*/
 @media only screen and (min-width: 1281px){
+    .compbox{
+        height: 32vh;
+}
+
+.prepbox{
+    height: 35vh;
+}
+
+.pre2{
+    height: 27vh !important;
+}
+
+.lbox{
+    height: 47vh;
+}
 
 }
 
@@ -688,7 +708,143 @@ hr{
 }
 
 
+#serv7sec2{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c1);
+}
 
+
+.compbox{
+    background-color: var(--c1);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.compbox:hover .comicon {
+
+    color: var(--c1);
+}
+
+.compbox:hover {
+/*    border-bottom: 2px solid var(--c5);*/
+
+    background-color: var(--c5);
+    color: var(--c1);
+    transition: .5s;
+}
+
+
+
+.comicon{
+    color: var(--c5);
+    font-size: 2.5em;
+
+}
+
+#serv7sec4{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c8);
+}
+
+
+#serv7sec5{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c1);
+}
+
+.bigtxt{
+    font-size: 3.5em;
+}
+
+.lbtxt{
+    font-size: 1.7em;
+}
+
+#serv7sec6{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c8);
+}
+
+
+
+
+
+.prepbox{
+     background-color: var(--c1);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.prepbox:hover{
+    border-bottom: 2px solid var(--c5);
+    transition: .2s;
+}
+
+
+.tree{
+     background-color: var(--c1);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+.arr{
+  position: relative;
+  width: 26px;
+  height: 26px;
+  background-color:var(--c1);
+  transform: rotate(45deg);
+  top: 5px;
+  z-index: 5;
+  left: -60px;
+}
+
+.arr2{
+  position: relative;
+  width: 26px;
+  height: 26px;
+  background-color:var(--c1);
+  transform: rotate(45deg);
+  top: 5px;
+  z-index: 5;
+  left: 108%;
+}
+
+
+
+.scrollcus{
+    position: absolute;
+    left: 50%;
+    width: 5px !important;
+    height:160%;
+    background-color: var(--c2);
+}
+
+
+#serv7sec7{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c5);
+}
+
+.lbox{
+    background-color: var(--c1);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.lbox:hover{
+    border-bottom: 5px solid var(--c2);
+
+}
 
 
 
