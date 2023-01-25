@@ -623,9 +623,69 @@ hr{
 
 
 
+#serv5sec2{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c1);
+}
+
+
+#serv5sec4{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c1);
+}
 
 
 
+#serv6sec2{
+    width:100%;
+    padding-bottom: 5%;
+    background-color: var(--c1);
+}
+.line{
+    background-color: var(--c5);
+    opacity:1;
+    height:20px;
+}
+
+#serv6sec4{
+    width:100%;
+    background-color: var(--c1);
+    
+}
+
+.h3{
+    color:var(--c2);
+}
+
+#serv6sec5{
+    width:100%;
+    background-color: var(--c1);
+}
+
+
+#serv6sec6{
+    width:100%;
+    background-color: var(--c1);
+    
+}
+
+.ri{
+    position:relative;
+    left:30%;
+}
+
+.imgs{
+/*    background-color: var(--c1);*/
+    padding: 2%;
+    
+}
+
+.box{
+    background-color: var(--c8);
+    border-radius: 10px;
+}
 
 
 

@@ -1049,6 +1049,16 @@ end of career page
 }
 
 
+.trainbox{
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#more {display: none;}
+
+.rm{
+    cursor: pointer;
+}
 
 
 
@@ -1057,9 +1067,7 @@ end of career page
 
 
 
-
-
-
+               
 
 
 
