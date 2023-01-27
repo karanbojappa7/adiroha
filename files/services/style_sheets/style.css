@@ -171,6 +171,12 @@ body{
     height: 47vh;
 }
 
+.iamserbox{
+    height: 40vh;
+}
+
+
+
 }
 
 
@@ -463,11 +469,7 @@ a{
     border-radius: 24px;
 }
 
-.phone{
-    z-index: 2;
-    color: var(--c2) !important;
-    width: 135%;
-}
+
 
 
 #serv1sec2{
@@ -851,6 +853,155 @@ hr{
     color: var(--c5);
 }
 
+
+
+#serv8sec2{
+    width: 100%;
+   padding-bottom: 5%;
+    background-color: var(--c1);
+}
+.line{
+    background-color: var(--c5);
+    opacity:1;
+    height:20px;
+}
+
+
+#serv8sec3{
+    width:100%;
+    padding-bottom: :5%;
+    background-color: var(--c9);
+}
+
+#serv8sec4{
+    width:100%;
+    padding-bottom:5%;
+    background-color:var(--c5);
+}
+.sh{
+    color:var(--c1);
+}
+.box1{
+    background-color: var(--c1);
+    border-radius: 10px;
+}
+.cl{
+    color:var(--c10);
+}
+.line1{
+    background-color:var(--c2);
+    opacity:1;
+    height:20px;
+}
+#serv8sec5{
+    width:100%;
+    padding-bottom:5%;
+    background-color: var(--c9);
+}
+
+
+.last{
+    position:relative;
+    top:100px;
+    border-radius: 15px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#serv9sec2{
+     width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c1);
+}
+
+
+.iamtxt{
+    font-size: 1.4em;
+}
+
+
+#serv9sec3{
+     width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c5);
+}
+
+
+.iambox{
+    background-color: var(--c1);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+     border-bottom: 5px solid rgba(0, 0, 0, 0);
+}
+
+.iambox:hover{
+     border-bottom: 3px solid rgba(0, 0, 0, 1);
+     transition: .5s;
+}
+
+
+#serv9sec4{
+     width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c1);
+}
+
+.num{
+    font-size: 4em;
+    font-weight: bolder;
+
+}
+
+.numdes{
+    font-size: 1.5em;
+}
+
+
+#serv9sec5{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c8);
+}
+
+.nata{
+    color: var(--c2) !important;
+}
+
+.nata:hover {
+  background-color: #ddd;
+}
+
+.nata.active {
+  background-color: var(--c5);
+  color: var(--c1);
+}
+
+
+.iamserbox{
+    background-color: var(--c1);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+
+}
+
+
+
+#serv9sec6{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--c1);
+}
 
 
 
