@@ -909,7 +909,11 @@ padding-bottom: 5%;
 #particles-js {
     position: absolute;
     width: 100%;
+<<<<<<< Updated upstream
     height: 78%;
+=======
+    height: 80%;
+>>>>>>> Stashed changes
     z-index: 1;
 }
 
@@ -1362,6 +1366,7 @@ background: linear-gradient(180deg, rgba(242,242,242,1) 10%, rgba(255,255,255,1)
 }
 
 
+<<<<<<< Updated upstream
 /*.nata{
     color: var(--c2) !important;
 }
@@ -1445,6 +1450,24 @@ background: linear-gradient(180deg, rgba(242,242,242,1) 10%, rgba(255,255,255,1)
     margin-top: 30px;
     font-weight: 600;
 }
+=======
+.iamserbox{
+    background-color: var(--c1);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 
 
@@ -1456,8 +1479,11 @@ background: linear-gradient(180deg, rgba(242,242,242,1) 10%, rgba(255,255,255,1)
 
 
 
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 
 
 
