@@ -107,6 +107,10 @@ body{
 .carsec1pos{
     top: 20px!important;
 }
+.tctop{
+    position: relative;
+    top: 5px !important;
+}
 
 
 }
@@ -136,7 +140,10 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
 }
-
+.tctop{
+    position: relative;
+    top: 150px !important;
+}
 
 }
 
@@ -1060,11 +1067,80 @@ end of career page
     cursor: pointer;
 }
 
+#tc{
+    width: 100%;
+    padding-bottom: 10%;
+}
 
 
+/*.tcbox::-webkit-scrollbar {
+    width: 6px;
+}
 
+.tcbox::-webkit-scrollbar-track {
+    background: var(--c1) !important;
+}
 
+.tcbox::-webkit-scrollbar-thumb {
+    background: var(--c5) !important;
+}*/
+
+.tctop{
+    position: relative;
+    top: 50px;
+}
+
+.terms-box{
+
+    background-color: var(--c2);
+    color: var(--c1);
+    padding: 60px 30px;
+    font-family: monospace;
+}
+
+.terms-text{
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--c1);
+
+}
                
+
+.terms-text h4{
+    font-size: 13px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.buttons{
+    display: flex;
+
+}
+
+
+.btna{
+    background-color: #d13639;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.btnd{
+    background-color: #202020;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.btna:hover , .btnd:hover{
+    opacity: .6;
+    transition: .5s;
+}
 
 
 
